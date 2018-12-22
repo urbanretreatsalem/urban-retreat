@@ -1,66 +1,62 @@
 <template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        urban-retreat
-      </h1>
-      <h2 class="subtitle">
-        My first-rate Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+  <main>
+    <Hero/>
+    <section id="stylists" class="section stylists">
+      <h2 class="section-title">Stylists</h2>
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column is-one-third">
+            <profileCard/>
+          </div>
+          <div class="column is-one-third">
+            <profileCard/>
+          </div>
+          <div class="column is-one-third">
+            <profileCard/>
+          </div>
+          <div class="column is-one-third">
+            <profileCard/>
+          </div>
+          <div class="column is-one-third">
+            <profileCard/>
+          </div>
+          <div class="column is-one-third">
+            <profileCard/>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+  import Hero from '~/components/Hero.vue'
+  import profileCard from '~/components/profileCard.vue'
 
-export default {
-  components: {
-    Logo
+  export default {
+    components: {
+      Hero,
+      profileCard
+    }
   }
-}
 </script>
 
-<style>
+<style lang="scss">
+  .stylists {
+    padding-bottom: 9rem;
+    
+    .column {
+      padding: 1.25rem;
+    }
+  }
 
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
+  .section-title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: .015em;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    color: #444;
+  }
 </style>

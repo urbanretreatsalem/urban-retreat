@@ -1,6 +1,6 @@
 # urban-retreat
 
-> My first-rate Nuxt.js project
+> Urban Retreat Salem
 
 ## Build Setup
 
