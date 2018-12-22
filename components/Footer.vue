@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer section">
+  <footer class="footer section" id="contact-us">
     <h2 class="section-title">Contact us</h2>
     <div class="container">
       <div class="columns">
@@ -92,6 +92,18 @@
   .map {
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
     border-radius: 3px;
+    position: relative;
+    padding-top: 100%;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .copyright {

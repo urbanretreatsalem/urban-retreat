@@ -14,16 +14,16 @@
 
   <div id="navbarMenu" class="navbar-menu">
     <div class="navbar-end">
-      <a class="navbar-item">
+      <a href="/#stylists" class="navbar-item">
         Stylists
       </a>
-      <a class="navbar-item">
+      <a href="#contact-us" class="navbar-item">
         Contact us
       </a>
-      <a class="navbar-item">
+      <a href="/services" class="navbar-item">
         Services
       </a>
-      <a class="navbar-item">
+      <a href="/about-us" class="navbar-item">
         About us
       </a>
       <a href="" class="navbar-item instagram">

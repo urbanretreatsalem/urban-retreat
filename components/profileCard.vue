@@ -3,7 +3,7 @@
     <div class="card-image">
       <figure class="image is-square">
         <img src="https://picsum.photos/800/800?image=823" alt="Placeholder image">
-        <figcaption class="title is-4">Jewelz</figcaption>
+        <figcaption class="name">Jewelz</figcaption>
       </figure>
     </div>
     <div class="card-content">
@@ -40,19 +40,28 @@
 
   .image {
     position: relative;
+
+    img {
+      opacity: .8;
+    }
   }
 
-  figcaption {
+  .name {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1em;
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     padding: 10px 20px;
     color: rgba(255,255,255,0.7);
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    text-align: right;
   }
 
   .card-content {
-    padding: 2.5rem;
+    padding: 1.5rem 2.5rem 2.5rem;
   }
 
   .content {

@@ -41,22 +41,12 @@
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .stylists {
     padding-bottom: 9rem;
     
     .column {
       padding: 1.25rem;
     }
-  }
-
-  .section-title {
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 300;
-    letter-spacing: .015em;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-    color: #444;
   }
 </style>
